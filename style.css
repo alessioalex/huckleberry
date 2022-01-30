@@ -10,44 +10,58 @@ body {
 }
 
 /* Add styles here! */
-strong {
-  font-weight: 700;
-  color: hsl(120deg 97% 30%);
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.4;
 }
 
 .max-width-wrapper {
-  max-width: 600px;
+  max-width: 750px;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 24px;
 }
 
 header,
-main .max-width-wrapper {
-  border-bottom: 6px solid hsl(0deg 0% 50%);    
-}
-
-header {
-  padding: 28px 21px;
+.card {
+  border-bottom: 8px solid hsl(0deg 0% 40%);    
 }
 
 .intro-chunk {
-  max-width: 300px;
+  max-width: 400px;
+  margin: 96px 0 48px;
+}
+
+.intro-chunk strong {
+  font-weight: 700;
+  color: hsl(160deg, 100%, 30%);
 }
 
 main {
-  background-color: hsl(0deg 0% 70%);
-  padding: 40px 0;
+  background-color: hsl(0deg 0% 60%);
+  padding: 48px 0;
 }
 
-main .max-width-wrapper {
+.card {
   background-color: hsl(0deg 0% 100%);
-  padding-top: 5px;
+  padding: 24px;
+  margin: -24px;
 }
 
 main .indented-heading {
-  background-color: hsl(45deg 100% 50%);
-  border-bottom: 6px solid hsl(45deg 100% 40%);
-  margin: 0 0 0 -20px;
-  padding: 5px 20px;
-  max-width: fit-content;
+  background-color: hsl(45deg, 100%, 50%);
+  border-bottom: 8px solid hsl(45deg, 100%, 40%);
+  margin: -16px 0 0 -32px;
+  padding: 16px 32px;
+  width: fit-content;
+}
+
+.intro-chunk p:last-child,
+.card p:last-child {
+  margin-bottom: 0;
 }
